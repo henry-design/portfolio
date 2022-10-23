@@ -154,6 +154,6 @@ navbar-toggler collapsed {
 
 @media(max-width:768px) {
     .particles-canvas {
-        display: none;
+        /* display: none; */
     }
 }
