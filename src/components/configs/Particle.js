@@ -16,7 +16,7 @@ export default function Particle() {
       };
     
       return (
-        <div className="new">
+        <div className="particles-canvas">
          
     
            <Particles

@@ -13,7 +13,7 @@ const Header = () =>{
             <Typed
             className="typed-text"
             strings={
-                ["Web Applications Design and Development","Software Design, Development, and Intergrations","Data analytics","Systems Administration"]
+                ["Web Applications Development","Software Development, and Intergrations","Data analytics","Systems Administration"]
             }
             typeSpeed={50}
                     backSpeed={20}

@@ -8,6 +8,7 @@
 }
 
 body {
+    transition: 0.2s ease-in-out;
     font-family: "Roboto condensed";
 }
 
@@ -19,7 +20,8 @@ nav {
 }
 
 .nav-logo {
-    height: 5rem;
+    height: 4rem;
+    margin-top: 5px;
 }
 
 
@@ -46,7 +48,20 @@ nav ul li {
 .navbar-brand {
     max-width: 10rem;
     padding: 0 !important;
-    height: 6rem !important;
+    height: 5rem !important;
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        max-width: 5rem !important;
+        height: 4rem !important;
+        margin-left: 0;
+    }
+    .container {
+        width: 100%;
+        padding: 0;
+        margin: 0
+    }
 }
 
 .navbar-nav>li>a.active,
@@ -87,11 +102,21 @@ navbar-toggler collapsed {
     align-items: center;
     text-align: center;
     font-family: "Roboto condensed" !important;
+    z-index: 1;
 }
 
 .main-info h1 {
     color: var(--primary-orange);
     text-transform: uppercase;
+}
+
+@media(max-width:768px) {
+    .main-info h1 {
+        font-size: 1.5rem !important;
+    }
+    .typed-text {
+        font-size: 1rem !important;
+    }
 }
 
 
@@ -109,14 +134,26 @@ navbar-toggler collapsed {
     border: 1px solid var(--primary-red);
     text-transform: uppercase;
     border-radius: 0;
-    padding: 0.625rem 0.75rem;
+    padding: 0.5rem 0.75rem;
     color: var(--primary-white);
     margin-top: 2rem;
+    text-decoration: none !important;
 }
 
 #tsparticles {
     position: absolute;
     height: 100vh;
-    width: 100vw;
+    width: 98vw;
     z-index: 1
+}
+
+.btn-main-offer:hover {
+    background-color: var(--primary-hover-red);
+    transition: 0.2s ease-in-out;
+}
+
+@media(max-width:768px) {
+    .particles-canvas {
+        display: none;
+    }
 }

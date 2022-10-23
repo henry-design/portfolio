@@ -227,13 +227,13 @@ const particlesCon={
         }
       },
       "color": {
-        "value": "#ebedf0",
+        "value": "#aeafb0",
         "animation": {
           "h": {
             "count": 0,
             "enable": true,
             "offset": 0,
-            "speed": 50,
+            "speed": 30,
             "decay": 0,
             "sync": false
           },
@@ -259,7 +259,7 @@ const particlesCon={
       "move": {
         "angle": {
           "offset": 0,
-          "value": 90
+          "value": 45
         },
         "attract": {
           "distance": 200,
@@ -281,8 +281,8 @@ const particlesCon={
         "drift": 0,
         "enable": true,
         "gravity": {
-          "acceleration": 9.81,
-          "enable": false,
+          "acceleration": 0.01,
+          "enable": true,
           "inverse": false,
           "maxSpeed": 50
         },
@@ -321,16 +321,16 @@ const particlesCon={
           }
         },
         "vibrate": false,
-        "warp": false
+        "warp": true
       },
       "number": {
         "density": {
           "enable": true,
-          "area": 800,
+          "area": 900,
           "factor": 1000
         },
         "limit": 0,
-        "value": 100
+        "value": 50
       },
       "opacity": {
         "random": {
